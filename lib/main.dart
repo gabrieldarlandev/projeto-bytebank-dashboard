@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_dashboard/screens/contact_form.dart';
-import 'package:projeto_dashboard/screens/contacts_list.dart';
+import 'package:projeto_dashboard/models/contact.dart';
 import 'package:projeto_dashboard/screens/dashboard.dart';
 
-void main() => runApp(BytebankApp());
+import 'database/app_database.dart';
+
+void main() {
+  runApp(BytebankApp());
+  // save(Contact(0, 'João', 2000)).then((id) {
+    findAll().then((value) => debugPrint(value.toString()));
+  // });
+}
 
 class BytebankApp extends StatelessWidget {
   @override
@@ -22,5 +28,3 @@ class BytebankApp extends StatelessWidget {
     );
   }
 }
-
-
