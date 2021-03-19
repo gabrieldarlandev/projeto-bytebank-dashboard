@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_dashboard/models/contact.dart';
 import 'package:projeto_dashboard/screens/dashboard.dart';
-
-import 'database/app_database.dart';
 
 void main() {
   runApp(BytebankApp());
-  // save(Contact(0, 'José', 2000));
 }
 
 class BytebankApp extends StatelessWidget {
