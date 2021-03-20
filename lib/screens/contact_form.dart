@@ -63,7 +63,7 @@ class _ContactFormState extends State<ContactForm> {
                           .then((id) => Navigator.pop(context));
                     } else {
                       Fluttertoast.showToast(
-                          msg: 'Preencha os campos corretamente',
+                          msg: 'Fill the fields corretly',
                           toastLength: Toast.LENGTH_LONG,
                           gravity: ToastGravity.BOTTOM);
                     }
